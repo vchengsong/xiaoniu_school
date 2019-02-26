@@ -2,8 +2,8 @@
 
 . ./base.sh
 
-contract=helloworld33
-contract_folder=hello
+contract=mytoken33333
+contract_folder=eosio.token
 
 keypair_1_prikey=5JfCFmHKKzGeJzEFmnzgwESQDyz4NXYyyMogxSvnYT1JaMYpJmG
 keypair_1_pubkey=EOS6tpJ5WzqWde2nKUQYmfPRVmoUHFmCdtKG25RkQqWEaBFgTavE7
@@ -20,16 +20,26 @@ set_contract(){
 set_contract
 
 
-echo  -------------------- IBC TEST ------------------------
+echo  -------------------- ACTIONS TEST ------------------------
 
-action_hi(){
-    cleos push action ${contract}  hi '["bytemaster"]' -p ${contract}
+action_create(){
+    cleos push action eosio.token create '["eosio", "10000000000.0000 EOS"]' -p eosio.token
 }
 
-action_test(){
+action_issue(){
+    cleos push action eosio.token issue '["eosio",  "1000000000.0000 EOS", "memo"]' -p eosio
+}
+
+action_transfer(){
+    echo
+}
+
+
+
+actions_test(){
     action_hi
 }
-action_test
+actions_test
 
 
 

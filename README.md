@@ -34,7 +34,7 @@ $ ./build.sh
 
 ### 5. Deploy and Test Your Contracts
 ```bash
-$ . test_hello_world.sh
+$ . test_hello.sh
 ```
 
 

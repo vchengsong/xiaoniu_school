@@ -30,6 +30,7 @@ else()
 endif()
 
 add_subdirectory(hello)
+add_subdirectory(eosio.token)
 
 if (APPLE)
    set(OPENSSL_ROOT "/usr/local/opt/openssl")
