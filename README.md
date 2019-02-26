@@ -1,10 +1,9 @@
-xiaoniu_school
------
 
 This project is designed to assist developers in building eosio smart-contract development environment.
-The whole process is divided into three steps. The first step is to start a single node eosio blockchain,
-the second step is to create basic accounts and deploy eosio system contracts, the third step is to 
-deploy and test your own contract.
+The whole process is divided into three steps.   
+1. start a single node eosio blockchain.  
+2. create basic accounts and deploy eosio system contracts.  
+3. build, deploy and test your own contract.  
 
 ### Prepare System Contracts
 ```bash
@@ -24,9 +23,18 @@ $ ./nodeos.sh clear   # remove all existing block data
 
 ### Initialize Blockchain
 ```bash
-$ . init_system_contracts.sh
+$ . chain_init.sh
 ```
 
-### 
+### Compile Your Contracts
+```bash
+$ cd contracts
+$ ./build.sh
+```
+
+### Deploy and Test Your Contracts
+```bash
+$ . test_hello_world.sh
+```
 
 
