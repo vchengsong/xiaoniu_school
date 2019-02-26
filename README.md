@@ -34,7 +34,8 @@ $ ./build.sh
 
 ### 5. Deploy and Test Your Contracts
 ```bash
-$ . test_hello.sh
+$ . test_hello.sh           # test hello contract
+$ . test_eosio_token.sh     # test eosio.token contract
 ```
 
 
